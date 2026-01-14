@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Maintenance | PT Kerja Bagus Bersama</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+
+    <style>
+        :root {
+            --orange: #f97316;
+            --orange-soft: rgba(249, 115, 22, 0.2);
+            --dark: #020617;
+            --dark-soft: rgba(2, 6, 23, 0.85);
+            --glass: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background:
+                radial-gradient(1000px circle at top right, rgba(249,115,22,0.25), transparent 45%),
+                radial-gradient(900px circle at bottom left, #020617, #020617 60%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Inter", "Segoe UI", Arial, sans-serif;
+            color: #f8fafc;
+        }
+
+        .card {
+            max-width: 640px;
+            width: 90%;
+            padding: 48px;
+            background: var(--glass);
+            backdrop-filter: blur(16px);
+            border-radius: 26px;
+            box-shadow: 0 40px 90px rgba(0, 0, 0, 0.5);
+            animation: fadeUp 0.9s ease-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 20px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            background: var(--orange-soft);
+            color: #fed7aa;
+            margin-bottom: 26px;
+        }
+
+        h1 {
+            font-size: clamp(28px, 4vw, 42px);
+            margin: 0 0 18px;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 16px;
+            color: #e5e7eb;
+            margin-bottom: 36px;
+            max-width: 520px;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(
+                to right,
+                transparent,
+                rgba(249, 115, 22, 0.35),
+                transparent
+            );
+            margin: 36px 0;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 14px;
+            color: #cbd5f5;
+        }
+
+        .footer strong {
+            color: #f8fafc;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="card">
+        <span class="badge">Maintenance Mode</span>
+
+        <h1>Platform Sedang Dioptimalkan</h1>
+
+        <p>
+            Kami tengah melakukan peningkatan infrastruktur dan sistem editorial
+            untuk memastikan penyajian berita yang lebih cepat, stabil, dan
+            terpercaya bagi seluruh pembaca.
+        </p>
+
+        <div class="divider"></div>
+
+        <div class="footer">
+            <strong>PT Kerja Bagus Bersama</strong>
+            <span>Media Berita & Publikasi Digital</span>
+            <span>© 2026 · All Rights Reserved</span>
+        </div>
+    </main>
+</body>
+</html>
